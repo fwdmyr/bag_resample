@@ -1,0 +1,10 @@
+<launch>
+
+    <!-- start the node -->
+    <node name="bag_resample_node" pkg="bag_resample" type="bag_resample_node" output="screen">
+        <!-- set params -->
+        <rosparam command="load" file="$(find bag_resample)/config/config.yaml" />
+    </node>
+
+
+</launch>

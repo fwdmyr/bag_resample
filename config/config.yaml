@@ -1,0 +1,16 @@
+resampleFrequency: 1.0
+# resampleMode options:
+# "default": resample whole bag with resampleFrequency
+# "user": resample only based on topicFrequencies, leave remaining topics unchanged
+# "combined": combine "user" and "default" with user taking precedence
+resampleMode: "user"
+bagDirectory: "/home/haoming/Desktop/resample_bags/"
+bagFiles: # comment out entries and replace with [] if all bags in directory should be processed
+  - "TestSmall.bag"
+  - "TestBig.bag"
+topicFrequencies:
+  - topic: "/zed2/zed_node/left/image_rect_color"
+    freq: 5.0
+
+  - topic: "/zed2/zed_node/right/image_rect_color"
+    freq: 5.0
